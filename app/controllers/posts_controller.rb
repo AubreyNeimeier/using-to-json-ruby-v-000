@@ -13,6 +13,7 @@ class PostsController < ApplicationController
                               include: [author: { only: [:name]}]) }
     end
   end
+  
   def new
     @post = Post.new
   end
